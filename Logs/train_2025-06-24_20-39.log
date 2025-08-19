@@ -1,0 +1,146 @@
+C:\Users\redic\AppData\Roaming\Python\Python39\site-packages\mlagents\torch_utils\torch.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+
+
+	Unity Technologies
+
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 1.13.1+cpu
+2025-06-24 20:39:59 DEBUG [learn.py:233] Configuration for this run:
+2025-06-24 20:39:59 DEBUG [learn.py:234] {
+    "default_settings": null,
+    "behaviors": {
+        "RacerAI": {
+            "trainer_type": "ppo",
+            "hyperparameters": {
+                "batch_size": 2048,
+                "buffer_size": 20480,
+                "learning_rate": 0.0003,
+                "beta": 0.0005,
+                "epsilon": 0.2,
+                "lambd": 0.95,
+                "num_epoch": 3,
+                "shared_critic": false,
+                "learning_rate_schedule": "linear",
+                "beta_schedule": "linear",
+                "epsilon_schedule": "linear"
+            },
+            "network_settings": {
+                "normalize": false,
+                "hidden_units": 256,
+                "num_layers": 2,
+                "vis_encode_type": "simple",
+                "memory": null,
+                "goal_conditioning_type": "hyper",
+                "deterministic": false
+            },
+            "reward_signals": {
+                "extrinsic": {
+                    "gamma": 0.99,
+                    "strength": 1.0,
+                    "network_settings": {
+                        "normalize": false,
+                        "hidden_units": 128,
+                        "num_layers": 2,
+                        "vis_encode_type": "simple",
+                        "memory": null,
+                        "goal_conditioning_type": "hyper",
+                        "deterministic": false
+                    }
+                }
+            },
+            "init_path": null,
+            "keep_checkpoints": 5,
+            "checkpoint_interval": 100000,
+            "max_steps": 1000000,
+            "time_horizon": 64,
+            "summary_freq": 1000,
+            "threaded": false,
+            "self_play": null,
+            "behavioral_cloning": null
+        }
+    },
+    "env_settings": {
+        "env_path": "Builds\\RacerTrainer.exe",
+        "env_args": null,
+        "base_port": 5005,
+        "num_envs": 1,
+        "num_areas": 1,
+        "seed": -1,
+        "max_lifetime_restarts": 10,
+        "restarts_rate_limit_n": 1,
+        "restarts_rate_limit_period_s": 60
+    },
+    "engine_settings": {
+        "width": 84,
+        "height": 84,
+        "quality_level": 5,
+        "time_scale": 10.0,
+        "target_frame_rate": -1,
+        "capture_frame_rate": 60,
+        "no_graphics": false
+    },
+    "environment_parameters": null,
+    "checkpoint_settings": {
+        "run_id": "RacerAI_1M_Run",
+        "initialize_from": null,
+        "load_model": false,
+        "resume": false,
+        "force": false,
+        "train_model": false,
+        "inference": false,
+        "results_dir": "results"
+    },
+    "torch_settings": {
+        "device": null
+    },
+    "debug": true
+}
+2025-06-24 20:39:59 DEBUG [learn.py:259] run_seed set to 9254
+2025-06-24 20:39:59 DEBUG [torch.py:58] default Torch device: cpu
+2025-06-24 20:39:59 DEBUG [stats_writer.py:60] Initializing StatsWriter plugins: default
+2025-06-24 20:39:59 DEBUG [stats_writer.py:63] Found 3 StatsWriters for plugin default
+C:\Users\redic\AppData\Roaming\Python\Python39\site-packages\mlagents\torch_utils\torch.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-06-24 20:40:01 DEBUG [env_utils.py:33] The true file name is RacerTrainer
+2025-06-24 20:40:01 DEBUG [env_utils.py:105] The launch string is D:\UnityProjects\Final_Year_Project\Builds\RacerTrainer.exe
+2025-06-24 20:40:01 DEBUG [env_utils.py:106] Running with args ['--mlagents-port', '5005', '-logFile', 'D:\\UnityProjects\\Final_Year_Project\\results\\RacerAI_1M_Run\\run_logs\\Player-0.log']
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=4194304"
+    "memorysetup-bucket-allocator-block-count=1"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=4194304"
+    "memorysetup-profiler-bucket-allocator-block-count=1"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=4194304"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+2025-06-24 20:40:01 INFO [environment.py:113] Connected to Unity environment with package version 2.3.0-exp.3 and communication version 1.5.0
+2025-06-24 20:40:34 DEBUG [subprocess_env_manager.py:223] UnityEnvironment worker 0: environment stopping.
+2025-06-24 20:40:34 DEBUG [subprocess_env_manager.py:237] UnityEnvironment worker 0 closing.
+2025-06-24 20:40:34 INFO [trainer_controller.py:187] Learning was interrupted. Please wait while the graph is generated.
+2025-06-24 20:40:34 DEBUG [trainer_controller.py:81] Saved Model
+2025-06-24 20:40:34 DEBUG [subprocess_env_manager.py:482] SubprocessEnvManager closing.
